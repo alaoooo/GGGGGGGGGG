@@ -944,7 +944,10 @@ client.on('message', message => {
 });
    
    
-   
+client.on('message', message => {
+    if (message.author.id !== '558220897547452418') return;
+    message.react(':heart:');//يمديك تعدل الرياكشن اذا تبي
+});
    
    
    
