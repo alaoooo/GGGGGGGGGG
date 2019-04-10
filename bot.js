@@ -252,9 +252,6 @@ Other Commands:
 ${prefix}invite ⥨ لدعوة البوت الى سيرفرك
 
 ${prefix}support ⥨ لدخول سيرفر الدعم
-
-رابط البوت:https://discordapp.com/oauth2/authorize?client_id=558298401004060673&permissions=8&scope=bot
-
 	  `)
    message.channel.sendEmbed(embed)
     
@@ -330,7 +327,7 @@ client.channels.get("470259562121920512").sendEmbed(embed)
 
 client.on('ready', function(){
     var ms = 10000 ;
-    var setGame = ['In 77 Server','*help | *invite','In 77 Server','*help | *invite','In 77 Server'];
+    var setGame = ['#help'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -456,7 +453,7 @@ client.on('message', message => {
 
 
 client.on('message', function(message) {
-	const myID = "494130483395821568";
+	const myID = "558220897547452418";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "setname")) {
 		        if(message.author.id !== myID) return;
@@ -794,11 +791,11 @@ if (message.content.startsWith(prefix + 'trans')) {
 
 
    client.on('message', message => {
-     if (message.content === "#support") {
+     if (message.content === "انف") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" ** :scales:سيرفر الدعم:scales:  **" , "  **https://discord.gg/6svmrx**")
+  .addField(" ** :scales:سيرفر الدعم:scales:  **" , "  **https://discord.gg/hr4AwZX**")
      
      
   message.channel.sendEmbed(embed);
@@ -897,7 +894,7 @@ client.on('message', message => {
    
    client.on('message', message => {
 
-    if (message.content.startsWith("#link")) {        
+    if (message.content.startsWith("رابط")) {        
   message.channel.createInvite({
         thing: true,
         maxUses: 100,
@@ -922,8 +919,6 @@ client.on('message', message => {
     }
  
 });
-
-
 
 
 
