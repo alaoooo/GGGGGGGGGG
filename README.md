@@ -1,1 +1,2 @@
-# GGGGGGGGGG
+# mykingbot
+King Bot
